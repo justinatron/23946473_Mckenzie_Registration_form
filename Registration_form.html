@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Other Required Elements -->
+    <meta name="author" content="Justina Mckenzie"> 
+    <meta name="description" content="IN-Class assignment 1: using forms">
+    <!-- Short page description-->
+    <title>Registration Form</title>
+</head>
+
+<body>
+
+   <h1 style="color: hotpink;"> Here is a Registration form</h1>
+   <!-- 
+   MUST HAVE THIS FOR A CSS FILE
+   tudent ID
+    Name
+    Filename
+    Date
+    Description -->
+
+
+    <!-- Registration for
+     first name                 input tesxt
+     last name                  input text
+     address                    input text
+     city                       input text
+     state                      select
+     zipcode                    input text
+     phone                      input text
+     email                      input email
+     dob                        input type date
+     highest degree     i       nput radio
+     programming languages      checkbox
+     
+     -->
+
+     <!-- 
+     wrap form in a table to make it look nicer -->
+   <table>
+        <form>  
+            <tr>
+                <td><label for="FirstName">First Name:</label></td>
+                <td><input type="text" name="FirstName" id="FirstName" required placeholder="First Name"></td>
+            </tr>
+             <tr>
+                <td><label for="LastName">Last Name:</label></td>
+                <td><input type="text" name="LastName" id="LastName" required placeholder="Last Name"></td>
+            </tr>
+            <tr>
+                <td><label for="Address">Address:</label></td>
+                <td><input type="text" name="Address" id="Address" required placeholder="Street Address"></td>
+            </tr>
+            <tr>
+                <td><label for="City">City:</label></td>
+                <td><input type="text" name="City" id="City" required placeholder="City"></td>
+            </tr>
+            <tr>
+                <td><label for="State">State:</label></td>
+                <td><select name="State" id="State">
+                    <option value="Select State">-Select state-</option>
+                    <option value="AL">Alabama</option>
+	                <option value="AK">Alaska</option>
+	                <option value="AZ">Arizona</option>
+		            <option value="AR">Arkansas</option>
+		            <option value="CA">California</option>
+		            <option value="CO">Colorado</option>
+	                <option value="CT">Connecticut</option>
+	                <option value="DE">Delaware</option>
+		            <option value="DC">District Of Columbia</option>
+	                <option value="FL">Florida</option>
+	                <option value="GA">Georgia</option>
+		            <option value="HI">Hawaii</option>
+		            <option value="ID">Idaho</option>
+		            <option value="IL">Illinois</option>
+		            <option value="IN">Indiana</option>
+	                <option value="IA">Iowa</option>
+	                <option value="KS">Kansas</option>
+		            <option value="KY">Kentucky</option>
+		            <option value="LA">Louisiana</option>
+		            <option value="ME">Maine</option>
+		            <option value="MD">Maryland</option>
+	                <option value="MA">Massachusetts</option>
+	                <option value="MI">Michigan</option>
+		            <option value="MN">Minnesota</option>
+		            <option value="MS">Mississippi</option>
+		            <option value="MO">Missouri</option>
+		            <option value="MT">Montana</option>
+	                <option value="NE">Nebraska</option>
+	                <option value="NV">Nevada</option>
+		            <option value="NH">New Hampshire</option>
+		            <option value="NJ">New Jersey</option>
+		            <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+            </tr>
+            <tr>
+                <td><label for="Zipcode">Zipcode:</label></td>
+                <td><input type="text" name="Zipcode" id="Zipcode" required placeholder="12345"></td>
+            </tr>
+            <tr>
+                <td><label for="Number">Phone Numebr:</label></td>
+                <td><input type="text" name="Number" id="Number" required placeholder="No dashes"></td>
+            </tr>
+            <tr>
+                <td><label for="Email">Email:</label></td>
+                <td><input type="email" name="Email" id="Email" required placeholder="Enter Valid email"></td>
+            </tr>
+            <tr>
+                <td><label for="DOB">Birthdate:</label></td>
+                <td><input type="date" name="DOB" id="DOB" required placeholder="MM/DD/YYYY"></td>
+            </tr>
+            <tr>
+                <td valign="top"><label for="Degree">Highest Degree:</label></td>
+           
+             
+                <td><input type="radio" id="Degree" name="Degree" value="HS Diploma">HS Diploma<br>
+           
+          
+                <input type="radio"  name="Degree" value="Bachelors">Bachelors<br>
+            
+           
+                <input type="radio" name="Degree" value="Masters">Masters<br>
+           
+            
+                <input type="radio" name="Degree" value="Phd">Phd<br>
+           
+            
+                <input type="radio" name="Degree" value="Other">Other:<br>
+                <textarea name="degree_other" placeholder="Please specify..."></textarea>
+            </td>
+            </tr>
+          
+            <tr>
+                <td valign="top"><label for="Language">Programming Languages:</label></td>
+           
+                <td>
+                    <input type="checkbox" id="Language" name="Language" value="C++">C++<br>
+        
+
+                    <input type="checkbox" name="Language" value="Python">Python<br>
+           
+                
+                    <input type="checkbox" name="Language" value="HTML">HTML<br>
+          
+                
+                    <input type="checkbox" name="Language" value="CSS">CSS<br>
+
+
+                    <input type="checkbox" name="Language" value="Other">Other:<br>
+                    <textarea name="Lang_other" placeholder="Please specify..."></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><button style="background-color: pink;" type="button" onclick="alert('Submission Successful!')">Submit</button></td>
+            </tr>
+        </form>
+   </table>
+
+
+
+
+
+</body>
+</html>
